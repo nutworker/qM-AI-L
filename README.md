@@ -32,7 +32,7 @@ Rouge-L, Meteor, Sacrebleu are some metrics used to compare the models.
 
 ### Usage
 
-The colab notebooks under.. are self-contained and can be directly run.
+The colab notebooks in this repo are self-contained and can be directly run.
 
 ## QA System
 TBD
