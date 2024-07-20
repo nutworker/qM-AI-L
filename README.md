@@ -20,15 +20,15 @@ The pre-trained models are fine-tuned using the "Annotated Enron Subject Line Co
 
 ### Models
 
-The models used are [T5-small](https://huggingface.co/google-t5/t5-small), [facebook/bart](https://huggingface.co/facebook/bart-base), [T5-base](https://huggingface.co/google-t5/t5-base).
+The models used are [T5-small](https://huggingface.co/google-t5/t5-small), [facebook/bart-base](https://huggingface.co/facebook/bart-base), [T5-base](https://huggingface.co/google-t5/t5-base).
 
 Rouge-L, Meteor, Sacrebleu are some metrics used to compare the models.
 
-|Model        |Rouge-L  |Meteor |Sacrebleu|
-|-------------|---------|-------|---------|
-|T5-Small     |
-|T5-Base      |
-|Facebook/Bart|
+|Model             |Rouge-L  |Meteor |Sacrebleu|
+|------------------|---------|-------|---------|
+|T5-small          |
+|T5-base           |
+|Facebook/bart-base|
 
 ### Usage
 
