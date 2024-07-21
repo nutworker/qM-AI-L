@@ -24,11 +24,11 @@ The models used are [t5-small](https://huggingface.co/google-t5/t5-small), [face
 
 Rouge-L, Meteor, Sacrebleu are some metrics used to compare the models.
 
-|Model             |Rouge-L  |Meteor |Sacrebleu|
-|------------------|---------|-------|---------|
-|t5-small          |
-|t5-base           |
-|facebook/bart-base|
+| Model                  | Rouge-L  | Meteor | Sacrebleu|
+|------------------------|----------|--------|----------|
+| **t5-small**           |
+| **t5-base**            |
+| **facebook/bart-base** |
 
 ### Usage
 
