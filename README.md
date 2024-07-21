@@ -10,7 +10,7 @@ qM-AI-L identifies the most salient words, phrases and sentences from the given 
 
 ### Dataset
 
-The pre-trained models are fine-tuned using the "Annotated Enron Subject Line Corpus" dataset.
+The pre-trained models are fine-tuned using the "[Annotated Enron Subject Line Corpus](https://github.com/ryanzhumich/AESLC)" dataset.
 * The dataset consists of a subset of cleaned, filtered and deduplicated emails from the Enron Email Corpus which consists of employee email inboxes from the Enron Corporation.
 * Evaluation (dev, test) split of the data contains 3 annotated subject lines by human annotators. Multiple possible references facilitate a better evaluation of the generated subject, since it is difficult to have only one unique, appropriate subject per email
 * Some dataset statistics:
@@ -20,15 +20,15 @@ The pre-trained models are fine-tuned using the "Annotated Enron Subject Line Co
 
 ### Models
 
-The models used are [T5-small](https://huggingface.co/google-t5/t5-small), [facebook/bart-base](https://huggingface.co/facebook/bart-base), [T5-base](https://huggingface.co/google-t5/t5-base).
+The models used are [t5-small](https://huggingface.co/google-t5/t5-small), [facebook/bart-base](https://huggingface.co/facebook/bart-base), [t5-base](https://huggingface.co/google-t5/t5-base).
 
 Rouge-L, Meteor, Sacrebleu are some metrics used to compare the models.
 
 |Model             |Rouge-L  |Meteor |Sacrebleu|
 |------------------|---------|-------|---------|
-|T5-small          |
-|T5-base           |
-|Facebook/bart-base|
+|t5-small          |
+|t5-base           |
+|facebook/bart-base|
 
 ### Usage
 
