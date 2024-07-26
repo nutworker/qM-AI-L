@@ -29,7 +29,7 @@ Rouge-L, Meteor, Sacrebleu are some metrics used to compare the models.
 | **t5-small**           |
 | **t5-base**            |
 | **facebook/bart-base** |
-
+|**mistral-7b-bnb-4bit Unsloth**|
 ### Usage
 
 The colab notebooks in this repo are self-contained and can be directly run.
