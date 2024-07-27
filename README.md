@@ -22,11 +22,11 @@ The pre-trained models are fine-tuned using the "[Annotated Enron Subject Line C
   * A subject contains an average of 4 words
  * A subset of train dataset is created for finetuning language models, although full train data set is also used a couple of times. 
 
-#### Methodology
+### Methodology
 * On high level different open source language models are researched and assesed that suits the problem statement of extracting most important words and concise summerisation. Transformer models and Bart models were found to be most apt for the given task other than the ChatGPT models.
 * Couple of pretrained models were selected to test with zero-shot inferencing and further finetuning
   
-#### 1. Test the Pretrained Model with Zero Shot Inferencing
+### 1. Test the Pretrained Model with Zero Shot Inferencing
 * Several models were loaded directly from hugging face and random records were inferenced to see how the models were behaving.
 * Google's T5-small, T5-Base, Flan-T5 and Facebook's Bart-Base models were tried.
 * By testing with various models with the zero shot inferencing, we can see that the model struggles to extract the same subject line compared to the human baseline subject, but it does pull out some important information from the email which indicates the models can be fine-tuned to the task at hand.
@@ -34,7 +34,7 @@ The pre-trained models are fine-tuned using the "[Annotated Enron Subject Line C
 * ![image](https://github.com/user-attachments/assets/a9078e75-5aa7-4762-b7e7-d9ea8d14d0f1)
 
 
-#### 2. Fine-Tune the Model with the Preprocessed Dataset
+### 2. Fine-Tune the Model with the Preprocessed Dataset
 ##### 2.1 - Preprocess the Email Dataset
 
 Email-Subject (prompt-input-response) format is created as explicit instructions for the LLM. Prepend a prompt instruction to the start of email body and generate the subject with Suject as follows:
@@ -90,7 +90,7 @@ Summarization: ROUGE-Lsum is specifically designed for summarization, making it 
 
 
 
-##### 3 - Perform Parameter Efficient Fine-Tuning (PEFT)
+### 3 - Perform Parameter Efficient Fine-Tuning (PEFT)
 
 * Parameter Efficient Fine-Tuning (PEFT), which is more efficient than full fine-tuning and yields comparable results. PEFT, often referring to Low-Rank Adaptation (LoRA), enables fine-tuning with fewer compute resources, often a single GPU. Tried PEFT on Flan T5 Base Model
 
