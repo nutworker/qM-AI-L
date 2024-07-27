@@ -12,6 +12,9 @@ qM-AI-L identifies the most salient words, phrases and sentences from the given 
 
 The pre-trained models are fine-tuned using the "[Annotated Enron Subject Line Corpus](https://github.com/ryanzhumich/AESLC)" dataset.
 * The dataset consists of a subset of cleaned, filtered and deduplicated emails from the Enron Email Corpus which consists of employee email inboxes from the Enron Corporation.
+
+#### Data Loading and Pre-Processing
+* LangChain_community.DirectoryLoaders are used to load the email files and then converted to Pandas DataFrame.(LangChain document_loader was organized, scalable, easy to use)
 * Evaluation (dev, test) split of the data contains 3 annotated subject lines by human annotators. Multiple possible references facilitate a better evaluation of the generated subject, since it is difficult to have only one unique, appropriate subject per email
 * Some dataset statistics:
   * Sizes of train / dev / test splits: 14,436 / 1,960 / 1,906
