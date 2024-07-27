@@ -56,8 +56,13 @@ Subject:
   
 * ![image](https://github.com/user-attachments/assets/ea5d3021-68c5-4381-b1e8-ccf8b7fa50b2)
 
+  ----------------------------------------------------------------------------------------
+
 * ![image](https://github.com/user-attachments/assets/c748ffaf-f5bf-4946-9ed5-64d1a11ec89d)
 
+------------------------------------------------------------------------------------------
+
+![image](https://github.com/user-attachments/assets/1369382d-9382-46fb-b533-35c1040fac8a)
 
   
 
@@ -76,13 +81,23 @@ Summarization: ROUGE-Lsum is specifically designed for summarization, making it 
 
 * ![image](https://github.com/user-attachments/assets/e6f70672-7482-46f5-a802-4125b203dc49)
 
+ -----------------------------------------------------------------------------------------
+
 * ![image](https://github.com/user-attachments/assets/b02de9a9-6a4b-4cc2-8931-c6b23d0c0983)
+
+ -----------------------------------------------------------------------------------------
 
 * ![image](https://github.com/user-attachments/assets/6735dad2-625a-4ae1-8805-a6a7ec2a877e)
   
-* notebook crashed before saving/ commit
+ -----------------------------------------------------------------------------------------
+
+* notebook runtime got deleted ...crashed before saving/ commit
+
+ -----------------------------------------------------------------------------------------
 
 * ![image](https://github.com/user-attachments/assets/0c4ea92c-091c-4f79-a100-746fa6c16794)
+
+   -----------------------------------------------------------------------------------------
 
 *The Finetuning results showed improvement in all ROUGE metrics:
 
@@ -110,7 +125,9 @@ Summarization: ROUGE-Lsum is specifically designed for summarization, making it 
 
 * loaded the model with lora_config
 * ![image](https://github.com/user-attachments/assets/6d58280f-5e43-4185-a812-469da50ea51f)
- 
+
+  -----------------------------------------------------------------------------------------
+
 * Tried highr learning_rate=1e-4, # Higher learning rate than full fine-tuning.
 * ![image](https://github.com/user-attachments/assets/6e392bcd-e1fa-4576-8eeb-d28e8255237c)
 
