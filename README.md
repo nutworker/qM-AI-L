@@ -50,13 +50,30 @@ Subject:
 ###### 2.2 - Fine-Tune the Model with the Preprocessed Dataset
 * Utilize the built-in Hugging Face Trainer class. Pass the preprocessed dataset with reference to the original pretrained model. Several training parameters are tweeked and explored experimentally.
 * Training a fully fine-tuned version of the model is taking few hours on a GPU. To save time, several checkpoints were created and the fully fine-tuned model were then initialised to use in the rest of experiments.
+* ![image](https://github.com/user-attachments/assets/ea5d3021-68c5-4381-b1e8-ccf8b7fa50b2)
+
 * 
+
 ###### 2.3 - Evaluate the Model Qualitatively (Human Evaluation)
 * Evaluated the model's performance qualitatively by comparing its ability to generate a reasonable subject line against its original subject to asses if the behaving the way it is supposed to, and is it able to understand the input. This approach confirmed that the fine-tuned model behaves as expected.
-![image](https://github.com/user-attachments/assets/6735dad2-625a-4ae1-8805-a6a7ec2a877e)
+  
+* ![image](https://github.com/user-attachments/assets/acf4afc2-92fa-4066-a124-3a66aa80fc23)
+
+###### 2.4 - Evaluate the Model Quantitatively (with ROUGE Metric etc)
+
+*The ROUGE metric helps quantify the validity of subject lines produced by models. It compares subjects to a "Annoted baseline" subject which is usually created by a human. While not perfect, it does indicate the overall increase in subject line generatiion effectiveness that we have accomplished by fine-tuning.
+
+* 
+
+* ![image](https://github.com/user-attachments/assets/b02de9a9-6a4b-4cc2-8931-c6b23d0c0983)
+
+* ![image](https://github.com/user-attachments/assets/6735dad2-625a-4ae1-8805-a6a7ec2a877e)
+  
+* notebook crashed before saving/ commit
+
+* ![image](https://github.com/user-attachments/assets/0c4ea92c-091c-4f79-a100-746fa6c16794)
 
 
-2.4 - Evaluate the Model Quantitatively (with ROUGE Metric)
 
 ##### 3 - Perform Parameter Efficient Fine-Tuning (PEFT)
 3.1 - Setup the PEFT/LoRA model for Fine-Tuning
