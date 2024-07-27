@@ -34,7 +34,7 @@ The pre-trained models are fine-tuned using the "[Annotated Enron Subject Line C
 ##### 2. Fine-Tune the Model with the Preprocessed Dataset
 ###### 2.1 - Preprocess the Email Dataset
 
-Email-Subject (prompt-response) pairs are created into explicit instructions for the LLM. Prepend a prompt instruction to the start of email body and generate the subject with Suject as follows:
+Email-Subject (prompt-input-response) format is created as explicit instructions for the LLM. Prepend a prompt instruction to the start of email body and generate the subject with Suject as follows:
 
 Training prompt (email):
 
@@ -53,6 +53,7 @@ Subject:
 * 
 ###### 2.3 - Evaluate the Model Qualitatively (Human Evaluation)
 * Evaluated the model's performance qualitatively by comparing its ability to generate a reasonable subject line against its original subject to asses if the behaving the way it is supposed to, and is it able to understand the input. This approach confirmed that the fine-tuned model behaves as expected.
+![image](https://github.com/user-attachments/assets/6735dad2-625a-4ae1-8805-a6a7ec2a877e)
 
 
 2.4 - Evaluate the Model Quantitatively (with ROUGE Metric)
