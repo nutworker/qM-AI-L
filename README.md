@@ -20,7 +20,7 @@ The pre-trained models are fine-tuned using the "[Annotated Enron Subject Line C
 
 ### Models
 
-The models used are [t5-small](https://huggingface.co/google-t5/t5-small), [facebook/bart-base](https://huggingface.co/facebook/bart-base), [t5-base](https://huggingface.co/google-t5/t5-base), [unsloth/mistral-7b-bnb-4bit](https://huggingface.co/unsloth/mistral-7b-bnb-4bit)
+The models used are [t5-small](https://huggingface.co/google-t5/t5-small), [facebook/bart-base](https://huggingface.co/facebook/bart-base), [t5-base](https://huggingface.co/google-t5/t5-base), [unsloth/mistral-7b-bnb-4bit](https://huggingface.co/unsloth/mistral-7b-bnb-4bit).
 
 Rouge-L, Meteor, Sacrebleu are some metrics used to compare the models.
 
