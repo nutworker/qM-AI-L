@@ -53,6 +53,9 @@ Subject:
   
 * ![image](https://github.com/user-attachments/assets/ea5d3021-68c5-4381-b1e8-ccf8b7fa50b2)
 
+* ![image](https://github.com/user-attachments/assets/c748ffaf-f5bf-4946-9ed5-64d1a11ec89d)
+
+
   
 
 ##### 2.3 - Evaluate the Model Qualitatively (Human Evaluation)
@@ -63,6 +66,10 @@ Subject:
 ##### 2.4 - Evaluate the Model Quantitatively (with ROUGE Metric etc)
 
 *The ROUGE metric helps quantify the validity of subject lines produced by models. It compares subjects to a "Annoted baseline" subject which is usually created by a human. While not perfect, it does indicate the overall increase in subject line generatiion effectiveness that we have accomplished by fine-tuning.
+
+* Granularity: ROUGE-1 focuses on individual words, ROUGE-2 on word pairs, and ROUGE-L on the longest sequence of words.
+Context: ROUGE-2 captures context better than ROUGE-1 due to its consideration of word pairs, while ROUGE-L and ROUGE-Lsum capture the overall sentence structure.
+Summarization: ROUGE-Lsum is specifically designed for summarization, making it more relevant for evaluating the quality of summaries compared to ROUGE-L, which can be applied more generally.
 
 * ![image](https://github.com/user-attachments/assets/e6f70672-7482-46f5-a802-4125b203dc49)
 
