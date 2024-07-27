@@ -30,7 +30,10 @@ The pre-trained models are fine-tuned using the "[Annotated Enron Subject Line C
 * Several models were loaded directly from hugging face and random records were inferenced to see how the models were behaving.
 * Google's T5-small, T5-Base, Flan-T5 and Facebook's Bart-Base models were tried.
 * By testing with various models with the zero shot inferencing, we can see that the model struggles to extract the same subject line compared to the human baseline subject, but it does pull out some important information from the email which indicates the models can be fine-tuned to the task at hand.
-* 
+
+* ![image](https://github.com/user-attachments/assets/a9078e75-5aa7-4762-b7e7-d9ea8d14d0f1)
+
+
 #### 2. Fine-Tune the Model with the Preprocessed Dataset
 ##### 2.1 - Preprocess the Email Dataset
 
