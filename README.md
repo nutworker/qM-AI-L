@@ -125,18 +125,18 @@ Subject:
 
 ##### 3.4 - Evaluate the Model Quantitatively (with ROUGE Metric)
 
-### Models
-
-The models used are [t5-small](https://huggingface.co/google-t5/t5-small), [facebook/bart-base](https://huggingface.co/facebook/bart-base), [t5-base](https://huggingface.co/google-t5/t5-base), [unsloth/mistral-7b-bnb-4bit](https://huggingface.co/unsloth/mistral-7b-bnb-4bit).
-
+### Performance of models
 Rouge-L, Meteor, Sacrebleu are some metrics used to compare the models.
+The table below captures the metrics for the models used for this project.
 
 | Model                  | Rouge-L  | Meteor | Sacrebleu|
 |------------------------|----------|--------|----------|
 | **t5-small**           |
 | **t5-base**            |
 | **facebook/bart-base** |
-|**mistral-7b-bnb-4bit Unsloth**|0.5|0.4|0.3|
+| **mistral-7b-bnb-4bit Unsloth** |0.5|0.4|0.3|
+| **flan-t5-base**       |
+
 ### Usage
 
 The colab notebooks in this repo are self-contained and can be directly run.
