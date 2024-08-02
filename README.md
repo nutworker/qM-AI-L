@@ -218,7 +218,7 @@ While the model shows effectiveness in extracting email subjects, there is room 
 
 ### Models References
 
-The models used are [facebook/bart-base](https://huggingface.co/facebook/bart-base), [FLAN-T5](https://huggingface.co/docs/transformers/en/model_doc/flan-t5#overview) [phi3](https://colab.research.google.com/drive/1lN6hPQveB_mHSnTOYifygFcrO8C1bxq4?usp=sharing) [Gemma-7b](https://huggingface.co/unsloth/gemma-7b-bnb-4bit) [Mistral](https://colab.research.google.com/drive/1_yNCks4BTD5zOnjozppphh5GzMFaMKq_?usp=sharing)
+The models used are [facebook/bart-base](https://huggingface.co/facebook/bart-base), [FLAN-T5](https://huggingface.co/docs/transformers/en/model_doc/flan-t5#overview) [phi3](https://colab.research.google.com/drive/1lN6hPQveB_mHSnTOYifygFcrO8C1bxq4?usp=sharing) [Gemma-7b](https://huggingface.co/unsloth/gemma-7b-bnb-4bit) [Mistral](https://colab.research.google.com/drive/1_yNCks4BTD5zOnjozppphh5GzMFaMKq_?usp=sharing) [google-gemma-with-unsloth](https://www.analyticsvidhya.com/blog/2024/04/fine-tuning-google-gemma-with-unsloth/)
 
 ### Links to our project notebooks
 
