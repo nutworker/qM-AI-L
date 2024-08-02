@@ -70,11 +70,12 @@ Subject:
 ##### 2.3 - Evaluate the Model Qualitatively (Human Evaluation)
 * Evaluated the model's performance qualitatively by comparing its ability to generate a reasonable subject line against its original subject to asses if the behaving the way it is supposed to, and is it able to understand the input. This approach confirmed that the fine-tuned model behaves as expected.
   
+  ----------------------------------------------------------------------------------------
 * ![image](https://github.com/user-attachments/assets/acf4afc2-92fa-4066-a124-3a66aa80fc23)
+  ----------------------------------------------------------------------------------------
   
 * ![image](https://github.com/user-attachments/assets/a142f1c1-530d-459e-90fb-b5e073ce6768)
-
-
+  ----------------------------------------------------------------------------------------
 ##### 2.4 - Evaluate the Model Quantitatively (with ROUGE Metric etc)
 
 *The ROUGE metric helps quantify the validity of subject lines produced by models. It compares subjects to a "Annoted baseline" subject which is usually created by a human. While not perfect, it does indicate the overall increase in subject line generatiion effectiveness that we have accomplished by fine-tuning.
