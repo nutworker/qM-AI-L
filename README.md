@@ -177,8 +177,9 @@ In this task, we fine-tuned few model for generating subject lines for emails. T
 
 Consistency in Capturing Key Points: The ROUGE-1 scores indicate that the model is capturing key points from the email. This suggests that for most of the email content, the generated subjects were aligned well with the essential topics.
 Complex Relationships and Nuances: The ROUGE-2 scores, particularly the high precision of and recall , reflect the model's ability to grasp more complex relationships and nuances in the email body. While lower than ROUGE-1, these scores are indicative of the model's potential in understanding subtleties in dialogues.
-Summary Length and Relevance: The ROUGE-L and ROUGE-Lsum scores, with a high precision of around 0.4613 and a recall of approximately 0.4039, demonstrate the model's capability in maintaining the length and relevance of the original dialogues in the summaries.
-While the model shows effectiveness in summarizing chat conversations, there is room for improvement, particularly in capturing more intricate details and subtleties, as suggested by the ROUGE-2 scores.
+Subject Length and Relevance: The ROUGE-L and ROUGE-Lsum scores, with a high precision and a recall, demonstrate the model's capability in maintaining the length and relevance of the original dialogues in the summaries.
+
+While the model shows effectiveness in extracting email subjects, there is room for improvement, particularly in capturing more intricate details and subtleties, as suggested by the ROUGE-2 scores.
 
 ### 5 - Building App with Gradio/ Hugging Face
 
@@ -217,15 +218,19 @@ While the model shows effectiveness in summarizing chat conversations, there is 
 
 ### Models References
 
-The models used are [facebook/bart-base](https://huggingface.co/facebook/bart-base), [FLAN-T5](https://huggingface.co/docs/transformers/en/model_doc/flan-t5#overview) [phi3] (https://colab.research.google.com/drive/1lN6hPQveB_mHSnTOYifygFcrO8C1bxq4?usp=sharing) [Gemma-7b](https://huggingface.co/unsloth/gemma-7b-bnb-4bit) [Mistral] (https://colab.research.google.com/drive/1_yNCks4BTD5zOnjozppphh5GzMFaMKq_?usp=sharing)
+The models used are [facebook/bart-base](https://huggingface.co/facebook/bart-base), [FLAN-T5](https://huggingface.co/docs/transformers/en/model_doc/flan-t5#overview) [phi3](https://colab.research.google.com/drive/1lN6hPQveB_mHSnTOYifygFcrO8C1bxq4?usp=sharing) [Gemma-7b](https://huggingface.co/unsloth/gemma-7b-bnb-4bit) [Mistral](https://colab.research.google.com/drive/1_yNCks4BTD5zOnjozppphh5GzMFaMKq_?usp=sharing)
 
 ### Links to our project notebooks
 
-https://github.com/nutworker/qM-AI-L/blob/L_test/email-subject/model-tuning/FB_Bart_Model1.ipynb
-
 https://github.com/nutworker/qM-AI-L/blob/main/Flan_T5_Base_Model.ipynb
 
+https://github.com/nutworker/qM-AI-L/blob/L_test/email-subject/model-tuning/FB_Bart_Model1.ipynb
+
 https://github.com/nutworker/qM-AI-L/blob/main/Gemma_7b_with_Unsloth1.ipynb
+
+https://github.com/nutworker/qM-AI-L/blob/main/email-subject/model-tuning/Phi_3_Mini_4K_Instruct_Unsloth_2x_faster_finetuning_Group15.ipynb
+
+https://github.com/nutworker/qM-AI-L/blob/main/email-subject/model-tuning/Alpaca_%2B_Mistral_v3_7b_full_example_Group15%20(1).ipynb
 
 
 ### Usage
