@@ -222,7 +222,9 @@ The models used are [facebook/bart-base](https://huggingface.co/facebook/bart-ba
 ### Links to our project notebooks
 
 https://github.com/nutworker/qM-AI-L/blob/L_test/email-subject/model-tuning/FB_Bart_Model1.ipynb
+
 https://github.com/nutworker/qM-AI-L/blob/main/Flan_T5_Base_Model.ipynb
+
 https://github.com/nutworker/qM-AI-L/blob/main/Gemma_7b_with_Unsloth1.ipynb
 
 
