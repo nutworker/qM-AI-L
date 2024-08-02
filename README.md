@@ -134,10 +134,21 @@ Rouge measures recall: how much the words (and/or n-grams) in the human referenc
 
 Rouge-L, Meteor, Sacrebleu are some metrics used to compare the models.
 
-| Model                  | Rouge-L  | Meteor | Sacrebleu|
-|------------------------|----------|--------|----------|
-| **Flan T5 Base**
-| **facebook/bart-base** |
+| Model                  | Rouge-1  |  Rouge-2  |  Rouge-L  |  Rouge-Lsum  | Meteor | Sacrebleu|
+|------------------------|----------|-----------|-----------|--------------|-------------------|
+| **Flan T5 Base**       |0.22        0.086       0.221       0.22
+| **facebook/bart-base** |0.28       0.12          0.28       0.28
+| **google/gemma-7b**    |
+| **google/gemma-7b**    |
+| **google/gemma-7b**    |
+| **google/gemma-7b**    |
+
+-----------------------------------------------------------------------------------------
+*google/gemma-7b:
+![image](https://github.com/user-attachments/assets/6c024dce-9035-4948-900c-e95015a3ee89)
+
+-----------------------------------------------------------------------------------------
+
 
 ### 5 - Building App with Gradio/ Hugging Face
 
