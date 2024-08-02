@@ -150,6 +150,14 @@ Rouge-L, Meteor, Sacrebleu are some metrics used to compare the models.
 -----------------------------------------------------------------------------------------
 
 
+### **Observations**
+In this task, we fine-tuned few model for generating subject lines for emails. These model showed promising performance, especially in capturing the essence of email body. The findings revealed the model's strengths and areas of improvement as follows:
+
+Consistency in Capturing Key Points: The ROUGE-1 scores indicate that the model is capturing key points from the email. This suggests that for most of the email content, the generated subjects were aligned well with the essential topics.
+Complex Relationships and Nuances: The ROUGE-2 scores, particularly the high precision of and recall , reflect the model's ability to grasp more complex relationships and nuances in the email body. While lower than ROUGE-1, these scores are indicative of the model's potential in understanding subtleties in dialogues.
+Summary Length and Relevance: The ROUGE-L and ROUGE-Lsum scores, with a high precision of around 0.4613 and a recall of approximately 0.4039, demonstrate the model's capability in maintaining the length and relevance of the original dialogues in the summaries.
+While the model shows effectiveness in summarizing chat conversations, there is room for improvement, particularly in capturing more intricate details and subtleties, as suggested by the ROUGE-2 scores.
+
 ### 5 - Building App with Gradio/ Hugging Face
 
 
