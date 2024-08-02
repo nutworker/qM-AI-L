@@ -25,6 +25,19 @@ The pre-trained models are fine-tuned using the "[Annotated Enron Subject Line C
 ### Methodology
 * On high level different open source language models are researched and assesed that suits the problem statement of extracting most important words/ context/ concise summerisation. Transformer models and Bart models were found to be most apt for the given task other than the ChatGPT models.
 * Couple of pretrained models were selected to test with zero-shot inferencing and further finetuning
+
+  ### Models Performances
+
+Rouge metrics were used to compare the models:
+
+| Model                  | Rouge-1  |  Rouge-2  |  Rouge-L  |  Rouge-Lsum  | 
+|------------------------|----------|-----------|-----------|--------------|
+| **Flan T5 Base**       |0.3189      | 0.1852    |   0.3108   |    0.3100 |                 
+| **facebook/bart-base** |0.2882      | 0.1232  |    0.2879   |    0.2893 
+| **google/gemma-7b (unsloth)**    |  0.4062   |   0.2277    |    0.3975 |   0.3928 |
+| **Mistral 7b (unsloth)**    | 0.2235   |  0.715    | 0.2236  | 0.2262 |
+| **Phi-3 (unsloth)**    | 0.1063 | 0.0250 | 0.0942 | 0.0946 |*
+ 
   
 ### 1. Test the Pretrained Model with Zero Shot Inferencing
 * Several models were loaded directly from hugging face and random records were inferenced to see how the models were behaving.
@@ -130,15 +143,15 @@ Rouge measures recall: how much the words (and/or n-grams) in the human referenc
 ![image](https://github.com/user-attachments/assets/b486b11e-f522-4d3e-a082-e9b5a014bb55)
 
 
-### 4 Models Performances
+### Models Performances
 
-Rouge-L, Meteor, Sacrebleu are some metrics used to compare the models.
+Rouge metrics were used to compare the models:
 
 | Model                  | Rouge-1  |  Rouge-2  |  Rouge-L  |  Rouge-Lsum  | 
 |------------------------|----------|-----------|-----------|--------------|
-| **Flan T5 Base**       |0.3189      | 0.1852    |   0.3108   |    0.3100 |                 
-| **facebook/bart-base** |0.2882      | 0.1232  |    0.2879   |    0.2893 
-| **google/gemma-7b (unsloth)**    |  0.4062   |   0.2277    |    0.3975 |   0.3928 |
+| **Flan T5 Base**       |0.3189    | 0.1852    |   0.3108   |    0.3100 |                 
+| **facebook/bart-base** |0.2882    | 0.1232    |    0.2879   |    0.2893 |
+| **google/gemma-7b (unsloth)**    |  0.4062   |   0.2277    |  0.3975 |  0.3928 |
 | **Mistral 7b (unsloth)**    | 0.2235   |  0.715    | 0.2236  | 0.2262 |
 | **Phi-3 (unsloth)**    | 0.1063 | 0.0250 | 0.0942 | 0.0946 |*
  
@@ -204,18 +217,14 @@ While the model shows effectiveness in summarizing chat conversations, there is 
 
 ### Models References
 
-The models used are [t5-small](https://huggingface.co/google-t5/t5-small), [facebook/bart-base](https://huggingface.co/facebook/bart-base), [t5-base](https://huggingface.co/google-t5/t5-base).
+The models used are [facebook/bart-base](https://huggingface.co/facebook/bart-base), [FLAN-T5](https://huggingface.co/docs/transformers/en/model_doc/flan-t5#overview) [phi3] (https://colab.research.google.com/drive/1lN6hPQveB_mHSnTOYifygFcrO8C1bxq4?usp=sharing) [Gemma-7b](https://huggingface.co/unsloth/gemma-7b-bnb-4bit) [Mistral] (https://colab.research.google.com/drive/1_yNCks4BTD5zOnjozppphh5GzMFaMKq_?usp=sharing)
 
-[FLAN-T5](https://huggingface.co/docs/transformers/en/model_doc/flan-t5#overview)
+### Links to our project notebooks
 
-Rouge-L, Meteor, Sacrebleu are some metrics used to compare the models.
+https://github.com/nutworker/qM-AI-L/blob/L_test/email-subject/model-tuning/FB_Bart_Model1.ipynb
+https://github.com/nutworker/qM-AI-L/blob/main/Flan_T5_Base_Model.ipynb
+https://github.com/nutworker/qM-AI-L/blob/main/Gemma_7b_with_Unsloth1.ipynb
 
-| Model                  | Rouge-L  | Meteor | Sacrebleu|
-|------------------------|----------|--------|----------|
-| **t5-small**           |
-| **t5-base**            |
-| **Flan T5 Base**
-| **facebook/bart-base** |
 
 ### Usage
 
