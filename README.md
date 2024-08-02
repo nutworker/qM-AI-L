@@ -33,6 +33,11 @@ The pre-trained models are fine-tuned using the "[Annotated Enron Subject Line C
 
 * ![image](https://github.com/user-attachments/assets/a9078e75-5aa7-4762-b7e7-d9ea8d14d0f1)
 
+* Positional encoding:
+ T5 uses relative position embeddings.
+ BART uses absolute position embeddings.
+
+
 
 ### 2. Fine-Tune the Model with the Preprocessed Dataset
 ##### 2.1 - Preprocess the Email Dataset
@@ -70,19 +75,31 @@ Subject:
 ##### 2.3 - Evaluate the Model Qualitatively (Human Evaluation)
 * Evaluated the model's performance qualitatively by comparing its ability to generate a reasonable subject line against its original subject to asses if the behaving the way it is supposed to, and is it able to understand the input. This approach confirmed that the fine-tuned model behaves as expected.
   
-  ----------------------------------------------------------------------------------------
-* ![image](https://github.com/user-attachments/assets/acf4afc2-92fa-4066-a124-3a66aa80fc23)
+ ----------------------------------------------------------------------------------------
+*Google's Flan-T5:
+   ![image](https://github.com/user-attachments/assets/acf4afc2-92fa-4066-a124-3a66aa80fc23)
   ----------------------------------------------------------------------------------------
   
-* ![image](https://github.com/user-attachments/assets/a142f1c1-530d-459e-90fb-b5e073ce6768)
+*Facebook's Bart-Base:
+  ![image](https://github.com/user-attachments/assets/a142f1c1-530d-459e-90fb-b5e073ce6768)
   ----------------------------------------------------------------------------------------
-##### 2.4 - Evaluate the Model Quantitatively (with ROUGE Metric etc)
+  
+ *Gemma 7B:
+  ![image](https://github.com/user-attachments/assets/f757016f-aae5-42aa-8d1a-c544f0e8908a)
+
+  ----------------------------------------------------------------------------------------
+  
+##### 2.4 - Evaluate the Model Quantitatively (with Rouge/Bleu Metric etc)
 
 *The ROUGE metric helps quantify the validity of subject lines produced by models. It compares subjects to a "Annoted baseline" subject which is usually created by a human. While not perfect, it does indicate the overall increase in subject line generatiion effectiveness that we have accomplished by fine-tuning.
 
 * Granularity: ROUGE-1 focuses on individual words, ROUGE-2 on word pairs, and ROUGE-L on the longest sequence of words.
 Context: ROUGE-2 captures context better than ROUGE-1 due to its consideration of word pairs, while ROUGE-L and ROUGE-Lsum capture the overall sentence structure.
 Summarization: ROUGE-Lsum is specifically designed for summarization, making it more relevant for evaluating the quality of summaries compared to ROUGE-L, which can be applied more generally.
+
+Bleu measures precision: how much the words (and/or n-grams) in the machine generated summaries appeared in the human reference summaries.
+Rouge measures recall: how much the words (and/or n-grams) in the human reference summaries appeared in the machine generated summaries.
+
 
 * ![image](https://github.com/user-attachments/assets/e6f70672-7482-46f5-a802-4125b203dc49)
 
@@ -109,8 +126,11 @@ Summarization: ROUGE-Lsum is specifically designed for summarization, making it 
 ![image](https://github.com/user-attachments/assets/b486b11e-f522-4d3e-a082-e9b5a014bb55)
 
 
+### 3 - Building App in Gradio/ Hugging Face
 
-### 3 - Perform Parameter Efficient Fine-Tuning (PEFT)
+
+
+### 4 - Next Steps : Perform Parameter Efficient Fine-Tuning (PEFT)
 
 * Parameter Efficient Fine-Tuning (PEFT), which is more efficient than full fine-tuning and yields comparable results. PEFT, often referring to Low-Rank Adaptation (LoRA), enables fine-tuning with fewer compute resources, often a single GPU. Tried PEFT on Flan T5 Base Model
 
