@@ -76,21 +76,21 @@ Subject:
 * Evaluated the model's performance qualitatively by comparing its ability to generate a reasonable subject line against its original subject to asses if the behaving the way it is supposed to, and is it able to understand the input. This approach confirmed that the fine-tuned model behaves as expected.
 
 
-**----------------------------------------------------------------------------------------**
+------------------------------------------------------------------------------------------
 ***Google's Flan-T5:**
    ![image](https://github.com/user-attachments/assets/acf4afc2-92fa-4066-a124-3a66aa80fc23)
   
- **----------------------------------------------------------------------------------------**
+------------------------------------------------------------------------------------------
   
 ***Facebook's Bart-Base:**
   ![image](https://github.com/user-attachments/assets/a142f1c1-530d-459e-90fb-b5e073ce6768)
   
-  **----------------------------------------------------------------------------------------**
+------------------------------------------------------------------------------------------
 
  ***Gemma 7B:**
   ![image](https://github.com/user-attachments/assets/f757016f-aae5-42aa-8d1a-c544f0e8908a)
 
-  **----------------------------------------------------------------------------------------**
+------------------------------------------------------------------------------------------
 
   
 ##### 2.4 - Evaluate the Model Quantitatively (with Rouge/Bleu Metric etc)
