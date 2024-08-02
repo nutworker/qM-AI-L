@@ -136,12 +136,12 @@ Rouge-L, Meteor, Sacrebleu are some metrics used to compare the models.
 
 | Model                  | Rouge-1  |  Rouge-2  |  Rouge-L  |  Rouge-Lsum  | 
 |------------------------|----------|-----------|-----------|--------------|
-| **Flan T5 Base**       |0.22       | 0.086    |   0.221   |    0.22      |                 
-| **facebook/bart-base** |0.28      | 0.12      |    0.28   |    0.28      |
-| **google/gemma-7b**    |
-| **google/gemma-7b**    |
-| **google/gemma-7b**    |
-| **google/gemma-7b**    |
+| **Flan T5 Base**       |0.3189      | 0.1852    |   0.3108   |    0.3100 |                 
+| **facebook/bart-base** |0.2882      | 0.1232  |    0.2879   |    0.2893 
+| **google/gemma-7b (unsloth)**    |  0.4062   |   0.2277    |    0.3975 |   0.3928 |
+| **Mistral 7b (unsloth)**    | 0.2235   |  0.715    | 0.2236  | 0.2262 |
+| **Phi-3 (unsloth)**    | 0.1063 | 0.0250 | 0.0942 | 0.0946 |*
+ 
 
 -----------------------------------------------------------------------------------------
 *google/gemma-7b:
@@ -149,7 +149,16 @@ Rouge-L, Meteor, Sacrebleu are some metrics used to compare the models.
 
 -----------------------------------------------------------------------------------------
 
+![image](https://github.com/user-attachments/assets/42e588f6-adbf-4a39-a286-9d2f7ae5a7e3)
 
+
+## For FLAN T5 : Absolute percentage improvement of FINETUNED MODEL over PRETRAINED
+rouge1: 6.82%
+rouge2: 5.08%
+rougeL: 7.08%
+rougeLsum: 7.11%%
+
+-----------------------------------------------------------------------------------------
 ### **Observations**
 In this task, we fine-tuned few model for generating subject lines for emails. These model showed promising performance, especially in capturing the essence of email body. The findings revealed the model's strengths and areas of improvement as follows:
 
