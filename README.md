@@ -74,20 +74,24 @@ Subject:
 
 ##### 2.3 - Evaluate the Model Qualitatively (Human Evaluation)
 * Evaluated the model's performance qualitatively by comparing its ability to generate a reasonable subject line against its original subject to asses if the behaving the way it is supposed to, and is it able to understand the input. This approach confirmed that the fine-tuned model behaves as expected.
-  
- ----------------------------------------------------------------------------------------
-*Google's Flan-T5:
+
+
+**----------------------------------------------------------------------------------------**
+***Google's Flan-T5:**
    ![image](https://github.com/user-attachments/assets/acf4afc2-92fa-4066-a124-3a66aa80fc23)
-  ----------------------------------------------------------------------------------------
   
-*Facebook's Bart-Base:
+ **----------------------------------------------------------------------------------------**
+  
+***Facebook's Bart-Base:**
   ![image](https://github.com/user-attachments/assets/a142f1c1-530d-459e-90fb-b5e073ce6768)
-  ----------------------------------------------------------------------------------------
   
- *Gemma 7B:
+  **----------------------------------------------------------------------------------------**
+
+ ***Gemma 7B:**
   ![image](https://github.com/user-attachments/assets/f757016f-aae5-42aa-8d1a-c544f0e8908a)
 
-  ----------------------------------------------------------------------------------------
+  **----------------------------------------------------------------------------------------**
+
   
 ##### 2.4 - Evaluate the Model Quantitatively (with Rouge/Bleu Metric etc)
 
@@ -126,15 +130,24 @@ Rouge measures recall: how much the words (and/or n-grams) in the human referenc
 ![image](https://github.com/user-attachments/assets/b486b11e-f522-4d3e-a082-e9b5a014bb55)
 
 
-### 3 - Building App in Gradio/ Hugging Face
+### 4 Models Performances
+
+Rouge-L, Meteor, Sacrebleu are some metrics used to compare the models.
+
+| Model                  | Rouge-L  | Meteor | Sacrebleu|
+|------------------------|----------|--------|----------|
+| **Flan T5 Base**
+| **facebook/bart-base** |
+
+### 5 - Building App with Gradio/ Hugging Face
 
 
 
-### 4 - Next Steps : Perform Parameter Efficient Fine-Tuning (PEFT)
+### 6 - Next Steps : Perform Parameter Efficient Fine-Tuning (PEFT)
 
 * Parameter Efficient Fine-Tuning (PEFT), which is more efficient than full fine-tuning and yields comparable results. PEFT, often referring to Low-Rank Adaptation (LoRA), enables fine-tuning with fewer compute resources, often a single GPU. Tried PEFT on Flan T5 Base Model
 
-##### 3.1 - Setup the PEFT/LoRA model for Fine-Tuning
+##### 6.1 - Setup the PEFT/LoRA model for Fine-Tuning
 
 * LoRA produces a small adapter (a few MBs) while keeping the original LLM unchanged. During inference, this adapter is combined with the original LLM, allowing multiple adapters to reuse the same LLM and reducing memory requirements for various tasks.
 
@@ -146,7 +159,7 @@ Rouge measures recall: how much the words (and/or n-grams) in the human referenc
     All model parameters: 251073792
     Percentage of trainable model parameters: 1.41%
   
-##### 3.2 - Train PEFT Adapter
+##### 6.2 - Train PEFT Adapter
 
 * loaded the model with lora_config
 * ![image](https://github.com/user-attachments/assets/6d58280f-5e43-4185-a812-469da50ea51f)
