@@ -174,7 +174,8 @@ Rouge measures recall: how much the words (and/or n-grams) in the human referenc
 
 *The Finetuning results showed improvement in all ROUGE metrics:
 
-![image](https://github.com/user-attachments/assets/b486b11e-f522-4d3e-a082-e9b5a014bb55)
+![image](https://github.com/user-attachments/assets/966531b7-7d72-4340-962d-18d0352ef2ac)
+
 
 
 ### Models Performances
