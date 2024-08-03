@@ -38,7 +38,7 @@ Rouge metrics were used to compare the models:
 | **Mistral 7b (unsloth)**    | 0.2235   |  0.715    | 0.2236  | 0.2262 |
 | **Phi-3 (unsloth)**    | 0.1063 | 0.0250 | 0.0942 | 0.0946 |*
 
-
+Gradio Link : https://huggingface.co/spaces/ssirikon/Gradio2-SubjectGen
   ### Key Arguments for gemma-7b TrainingArguments
 
 * per_device_train_batch_size: This tells the number of training examples processed per device (e.g., GPU) during each training step. Here, it is set to 1, meaning 1 examples will be processed per device in each step.
