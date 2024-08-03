@@ -208,7 +208,7 @@ Flan T5:
   essential topics.
 * The models demonstrates potential for understanding nuanced details, as indicated by ROUGE-2 scores, though there is room for improvement.
 * High ROUGE-L and ROUGE-Lsum scores reflect good maintenance of subject length and relevance.
-* Specific prompts, such as "generate a subject line," yield better results compared to combined prompts like "summarize and generate subject."
+* Specific prompts, such as "generate a subject line," yield better results compared to combined prompts like "summarize the text."
 * Repetitive responses in pre-trained models (e.g., Mistral) were managed by applying a repetition_penalty of 1.5, but excessive penalties can cause unusual 
   outputs.
 * Phi3 excels in text completion and GPT-style conversations but may produce hallucinations and less accurate results.
