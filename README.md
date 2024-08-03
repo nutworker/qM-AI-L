@@ -217,13 +217,13 @@ Rouge metrics were used to compare the models:
 
 ### 5 - Building App with Gradio and publishing in Hugging Face
 
-# Build the Gradio App:#
+### Build the Gradio App:#
 We designed our Gradio interface, defining how the user will interact with our model and ensuring the input and output specifications are clear.
 
-# Save the App and Dependencies:
+### Save the App and Dependencies:
 We prepared our app script and ensure all necessary dependencies are listed in a requirements file, ready for deployment.
 
-# Publish on Hugging Face Spaces:
+### Publish on Hugging Face Spaces:
 We created an account on Hugging Face, set up a new Space for our app, and push our code to this Space, making our app publicly accessible.
 
 
