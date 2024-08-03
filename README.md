@@ -38,13 +38,14 @@ Rouge metrics were used to compare the models:
 | **Mistral 7b (unsloth)**    | 0.2235   |  0.715    | 0.2236  | 0.2262 |
 | **Phi-3 (unsloth)**    | 0.1063 | 0.0250 | 0.0942 | 0.0946 |*
 
-  ### Key Arguments for TrainingArguments
 
-* per_device_train_batch_size: This tells the number of training examples processed per device (e.g., GPU) during each training step. Here, it is set to 2, meaning 2 examples will be processed per device in each step.
-* gradient_accumulation_steps: This defines the number of Grad Accumulation steps before performing a parameter update. It effectively increases the batch size by accumulating gradients over multiple steps. Here, it is set to 4, meaning gradients will be accumulated over 4 steps before updating the model parameters.
+  ### Key Arguments for gemma-7b TrainingArguments
+
+* per_device_train_batch_size: This tells the number of training examples processed per device (e.g., GPU) during each training step. Here, it is set to 1, meaning 1 examples will be processed per device in each step.
+* gradient_accumulation_steps: This defines the number of Grad Accumulation steps before performing a parameter update. It effectively increases the batch size by accumulating gradients over multiple steps. Here, it is set to 2, meaning gradients will be accumulated over 2 steps before updating the model parameters.
 * warmup_steps: This sets the number of warm-up steps during training, gradually increasing the Learning Rate from 0 to the provided value. Here, it’s set to 5, so the Learning Rate will linearly increase over the first 5 steps.
 * max_steps: This defines the total number of training steps to perform. Here, it is set to 50, meaning the training will stop after 50 steps.
-learning_rate: This tells the first Learning Rate used for training. Here, it is set to 2e-4 (2 multiplied by 10 to the power of -4).
+* learning_rate: This tells the first Learning Rate used for training. Here, it is set to 2e-4 (2 multiplied by 10 to the power of -4).
 * fp16 and bf16: These arguments control the precision used for training. fp16 is for half-precision (16-bit) training if the GPU supports it, while bf16 is for bfloat16 training if supported.
 * logging_steps: This sets the interval at which training metrics and losses are logged. We set it to 1, so logs are printed after every training step.
 optim: This tells the optimizer to use for training. Here, we set it to ‘paged_adamw_8bit’, a specialized optimizer for memory-efficient training.
