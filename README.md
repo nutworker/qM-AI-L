@@ -55,6 +55,12 @@ Rouge metrics were used to compare the models:
 ### 2. Fine-Tune the Model with the Preprocessed Dataset
 ##### 2.1 - Preprocess the Email Dataset
 
+# For Gemma 7B
+![image](https://github.com/user-attachments/assets/297a124f-ba86-43c2-97a2-22410dedd6b0)
+
+----------------------------------------------------------------------------------------
+
+# For Flan-T5
 Email-Subject (prompt-input-response) format is created as explicit instructions for the LLM. Prepend a prompt instruction to the start of email body and generate the subject with Suject as follows:
 
 Training prompt (email):
@@ -67,10 +73,11 @@ Email:
 
 Subject:
 """
+----------------------------------------------------------------------------------------
 
 ##### 2.2 - Fine-Tune the Model with the Preprocessed Dataset
-* Utilize the built-in Hugging Face Trainer class. Pass the preprocessed dataset with reference to the original pretrained model. Several training parameters are tweeked and explored experimentally.
-* Training a fully fine-tuned version of the model is taking few hours on a GPU. To save time, several checkpoints were created and the fully fine-tuned model were then initialised to use in the rest of experiments.
+* Utilize the built-in Hugging Face/ SFTTrainer Trainer class. Pass the preprocessed dataset with reference to the original pretrained model. Several training parameters are tweeked and explored experimentally.
+* Training a fully fine-tuned version of the basic/ small model is taking few hours on a GPU. To save time, several checkpoints were created and the fully fine-tuned model were then initialised to use in the rest of experiments.
 ----------------------------------------------------------------------------------------
   
 * ![image](https://github.com/user-attachments/assets/ea5d3021-68c5-4381-b1e8-ccf8b7fa50b2)
@@ -175,25 +182,27 @@ rougeLsum: 7.11%%
 
 -----------------------------------------------------------------------------------------
 ### Observations:
-* Fine-tuned models for generating email subject lines effectively capture key points and overall essence, with strong ROUGE-1 scores showing alignment with 
+* Fine-tuned models for generating email subject lines effectively capture key points and overall essence, with decent ROUGE-1 scores showing alignment with 
   essential topics.
-* The model demonstrates potential for understanding nuanced details, as indicated by ROUGE-2 scores, though there is room for improvement.
+* The models demonstrates potential for understanding nuanced details, as indicated by ROUGE-2 scores, though there is room for improvement.
 * High ROUGE-L and ROUGE-Lsum scores reflect good maintenance of subject length and relevance.
-* Specific prompts, such as "generate subject line," yield better results compared to combined prompts like "summarize and generate subject."
+* Specific prompts, such as "generate a subject line," yield better results compared to combined prompts like "summarize and generate subject."
 * Repetitive responses in pre-trained models (e.g., Mistral) were managed by applying a repetition_penalty of 1.5, but excessive penalties can cause unusual 
   outputs.
 * Phi3 excels in text completion and GPT-style conversations but may produce hallucinations and less accurate results.
+  
+
 
 ### 5 - Building App with Gradio and publishing in Hugging Face
 
 # Build the Gradio App:#
-We design our Gradio interface, defining how the user will interact with our model and ensuring the input and output specifications are clear.
+We designed our Gradio interface, defining how the user will interact with our model and ensuring the input and output specifications are clear.
 
 # Save the App and Dependencies:
-We prepare our app script and ensure all necessary dependencies are listed in a requirements file, ready for deployment.
+We prepared our app script and ensure all necessary dependencies are listed in a requirements file, ready for deployment.
 
 # Publish on Hugging Face Spaces:
-We create an account on Hugging Face, set up a new Space for our app, and push our code to this Space, making our app publicly accessible.
+We created an account on Hugging Face, set up a new Space for our app, and push our code to this Space, making our app publicly accessible.
 
 
 
