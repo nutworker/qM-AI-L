@@ -56,8 +56,8 @@ lr_scheduler_type: This tells what Learning Rate Scheduler to use during trainin
 
 ### 1. Test the Pretrained Model with Zero Shot Inferencing
 * Several models were loaded directly from hugging face and random records were inferenced to see how the models were behaving.
-* **Google's Flan-T5, Facebook's Bart-Base, Gemma 7B**,  models were tried.
-* By testing with various models with the zero shot inferencing, we can see that the model struggles to extract the same subject line compared to the human baseline subject, but it does pull out some important information from the email which indicates the models can be fine-tuned to the task at hand.
+* **Google's Flan-T5, Facebook's Bart-Base, Gemma 7B, Mistral 7b,Phi-3 (unsloth)**,  models were tried.
+* By testing with various models with the zero shot inferencing, we could see that the model struggles to extract the same subject line compared to the human baseline subject, but it does pull out some important information from the email which indicates the models can be fine-tuned to the task at hand.
 
 * ![image](https://github.com/user-attachments/assets/a9078e75-5aa7-4762-b7e7-d9ea8d14d0f1)
 
@@ -68,7 +68,7 @@ lr_scheduler_type: This tells what Learning Rate Scheduler to use during trainin
 
 
 ### 2. Fine-Tune the Model with the Preprocessed Dataset
-##### 2.1 - Preprocess the Email Dataset
+##### 2.1 - Preprocess the Email Dataset for input to the model
 
 ### For Gemma 7B
 ![image](https://github.com/user-attachments/assets/297a124f-ba86-43c2-97a2-22410dedd6b0)
@@ -194,7 +194,7 @@ Rouge metrics were used to compare the models:
 ![image](https://github.com/user-attachments/assets/42e588f6-adbf-4a39-a286-9d2f7ae5a7e3)
 
 
-## For FLAN T5 : Absolute percentage improvement of FINETUNED MODEL over PRETRAINED
+#### For FLAN T5 : Absolute percentage improvement of FINETUNED MODEL over PRETRAINED
 rouge1: 6.82%
 rouge2: 5.08%
 rougeL: 7.08%
