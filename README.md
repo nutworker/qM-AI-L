@@ -173,7 +173,7 @@ Rouge measures recall: how much the words (and/or n-grams) in the human referenc
    -----------------------------------------------------------------------------------------
 
 *The Finetuning results showed improvement in all ROUGE metrics:
-
+#### For FLAN T5 : Absolute percentage improvement of FINETUNED MODEL over PRETRAINED
 ![image](https://github.com/user-attachments/assets/966531b7-7d72-4340-962d-18d0352ef2ac)
 
 
@@ -199,11 +199,8 @@ Rouge metrics were used to compare the models:
 ![image](https://github.com/user-attachments/assets/42e588f6-adbf-4a39-a286-9d2f7ae5a7e3)
 
 
-#### For FLAN T5 : Absolute percentage improvement of FINETUNED MODEL over PRETRAINED
-rouge1: 6.82%
-rouge2: 5.08%
-rougeL: 7.08%
-rougeLsum: 7.11%%
+
+
 
 -----------------------------------------------------------------------------------------
 ### Observations:
