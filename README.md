@@ -195,7 +195,7 @@ Rouge metrics were used to compare the models:
 ![image](https://github.com/user-attachments/assets/6c024dce-9035-4948-900c-e95015a3ee89)
 
 -----------------------------------------------------------------------------------------
-
+Flan T5:
 ![image](https://github.com/user-attachments/assets/42e588f6-adbf-4a39-a286-9d2f7ae5a7e3)
 
 
