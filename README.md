@@ -34,7 +34,7 @@ Rouge metrics were used to compare the models:
 |------------------------|----------|-----------|-----------|--------------|
 | **Flan T5 Base**       |0.3189      | 0.1852    |   0.3108   |    0.3100 |                 
 | **facebook/bart-base** |0.2882      | 0.1232  |    0.2879   |    0.2893 
-| **google/gemma-7b (unsloth)**    |  0.4062   |   0.2277    |    0.3975 |   0.3928 |
+| **google/gemma-7b (unsloth)-ann1**    | 0.6355   |   0.4207    |    0.5924 |   0.5924 |
 | **Mistral 7b (unsloth)**    | 0.2235   |  0.715    | 0.2236  | 0.2262 |
 | **Phi-3 (unsloth)**    | 0.1063 | 0.0250 | 0.0942 | 0.0946 |*
  
@@ -91,16 +91,19 @@ Subject:
 
 ------------------------------------------------------------------------------------------
 ***Google's Flan-T5:**
+
    ![image](https://github.com/user-attachments/assets/acf4afc2-92fa-4066-a124-3a66aa80fc23)
   
 ------------------------------------------------------------------------------------------
   
 ***Facebook's Bart-Base:**
+
   ![image](https://github.com/user-attachments/assets/a142f1c1-530d-459e-90fb-b5e073ce6768)
   
 ------------------------------------------------------------------------------------------
 
  ***Gemma 7B:**
+ 
   ![image](https://github.com/user-attachments/assets/f757016f-aae5-42aa-8d1a-c544f0e8908a)
 
 ------------------------------------------------------------------------------------------
@@ -149,12 +152,11 @@ Rouge metrics were used to compare the models:
 
 | Model                  | Rouge-1  |  Rouge-2  |  Rouge-L  |  Rouge-Lsum  | 
 |------------------------|----------|-----------|-----------|--------------|
-| **Flan T5 Base**       |0.3189    | 0.1852    |   0.3108   |    0.3100 |                 
-| **facebook/bart-base** |0.2882    | 0.1232    |    0.2879   |    0.2893 |
-| **google/gemma-7b (unsloth)**    |  0.4062   |   0.2277    |  0.3975 |  0.3928 |
+| **Flan T5 Base**       |0.3189      | 0.1852    |   0.3108   |    0.3100 |                 
+| **facebook/bart-base** |0.2882      | 0.1232  |    0.2879   |    0.2893 
+| **google/gemma-7b (unsloth)-ann1**    | 0.6355   |   0.4207    |    0.5924 |   0.5924 |
 | **Mistral 7b (unsloth)**    | 0.2235   |  0.715    | 0.2236  | 0.2262 |
 | **Phi-3 (unsloth)**    | 0.1063 | 0.0250 | 0.0942 | 0.0946 |*
- 
 
 -----------------------------------------------------------------------------------------
 *google/gemma-7b:
@@ -182,11 +184,16 @@ rougeLsum: 7.11%%
   outputs.
 * Phi3 excels in text completion and GPT-style conversations but may produce hallucinations and less accurate results.
 
-### 5 - Building App with Gradio/ Hugging Face
+### 5 - Building App with Gradio and publishing in Hugging Face
 
+# Build the Gradio App:#
+We design our Gradio interface, defining how the user will interact with our model and ensuring the input and output specifications are clear.
 
+# Save the App and Dependencies:
+We prepare our app script and ensure all necessary dependencies are listed in a requirements file, ready for deployment.
 
-
+# Publish on Hugging Face Spaces:
+We create an account on Hugging Face, set up a new Space for our app, and push our code to this Space, making our app publicly accessible.
 
 
 
@@ -196,7 +203,7 @@ https://github.com/nutworker/qM-AI-L/blob/main/Flan_T5_Base_Model.ipynb
 
 https://github.com/nutworker/qM-AI-L/blob/L_test/email-subject/model-tuning/FB_Bart_Model1.ipynb
 
-https://github.com/nutworker/qM-AI-L/blob/main/Gemma_7b_with_Unsloth1.ipynb
+https://github.com/nutworker/qM-AI-L/blob/main/Gemma_7b_with_Unsloth2.ipynb
 
 https://github.com/nutworker/qM-AI-L/blob/main/email-subject/model-tuning/Phi_3_Mini_4K_Instruct_Unsloth_2x_faster_finetuning_Group15.ipynb
 
@@ -210,6 +217,7 @@ The models used are [facebook/bart-base](https://huggingface.co/facebook/bart-ba
 ### Usage
 
 The colab notebooks in this repo are self-contained and can be directly run.
+
 
 ### Next Steps : Perform Parameter Efficient Fine-Tuning (PEFT)
 
