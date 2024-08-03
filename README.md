@@ -73,7 +73,9 @@ lr_scheduler_type: This tells what Learning Rate Scheduler to use during trainin
 ### For Gemma 7B
 ![image](https://github.com/user-attachments/assets/297a124f-ba86-43c2-97a2-22410dedd6b0)
 
+
 ----------------------------------------------------------------------------------------
+
 
 ### For Flan-T5
 Email-Subject (prompt-input-response) format is created as explicit instructions for the LLM. Prepend a prompt instruction to the start of email body and generate the subject with Suject as follows:
@@ -87,7 +89,9 @@ Email:
 {email}
 
 Subject:
+
 """
+
 ----------------------------------------------------------------------------------------
 
 ##### 2.2 - Fine-Tune the Model with the Preprocessed Dataset
