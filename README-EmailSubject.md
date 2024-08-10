@@ -38,7 +38,7 @@ Rouge metrics were used to compare the models:
 | **Mistral 7b (unsloth)**    | 0.2235   |  0.715    | 0.2236  | 0.2262 |
 | **Phi-3 (unsloth)**    | 0.1063 | 0.0250 | 0.0942 | 0.0946 |*
 
-Gradio Link : https://huggingface.co/spaces/ssirikon/Gradio2-SubjectGen
+## Gradio Link : https://huggingface.co/spaces/ssirikon/Gradio2-SubjectGen
   ### Key Arguments for gemma-7b TrainingArguments
 
 * per_device_train_batch_size: This tells the number of training examples processed per device (e.g., GPU) during each training step. Here, it is set to 1, meaning 1 examples will be processed per device in each step.
@@ -215,7 +215,7 @@ Flan T5:
   
 
 
-### 5 - Building App with Gradio and publishing in Hugging Face
+### 5 - DEPLOYMENT - Building App with Gradio and publishing in Hugging Face
 
 ### Build the Gradio App:#
 We designed our Gradio interface, defining how the user will interact with our model and ensuring the input and output specifications are clear.
@@ -226,7 +226,10 @@ We prepared our app script and ensure all necessary dependencies are listed in a
 ### Publish on Hugging Face Spaces:
 We created an account on Hugging Face, set up a new Space for our app, and push our code to this Space, making our app publicly accessible.
 
-
+### Links to Gradio App files and model on HuggingFace
+https://github.com/nutworker/qM-AI-L/tree/main/email-subject/Deployment
+https://huggingface.co/spaces/ssirikon/Gradio2-SubjectGen/tree/main
+https://huggingface.co/Lohith9459/gemma7b/tree/main
 
 ### Links to our project notebooks
 
