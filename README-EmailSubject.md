@@ -228,7 +228,9 @@ We created an account on Hugging Face, set up a new Space for our app, and push 
 
 ### Links to Gradio App files and model on HuggingFace
 https://github.com/nutworker/qM-AI-L/tree/main/email-subject/Deployment
+
 https://huggingface.co/spaces/ssirikon/Gradio2-SubjectGen/tree/main
+
 https://huggingface.co/Lohith9459/gemma7b/tree/main
 
 ### Links to our project notebooks
