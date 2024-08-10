@@ -116,7 +116,8 @@
 112,Why would you use the Kernel Trick?,Kernel trick allows us to operate in the original feature space without computing the coordinates of the data.,1
 113,What are hyperparameters,A hyperparameter is a variable that is external to the model whose value cannot be estimated from the data. They are often used to estimate model parameters.,1
 114,Differentiate between Linear Regression and Support Vector Machines (SVMs).,"Linear Regression predicts continuous outcomes by fitting a line, while SVMs classify data by finding hyperplanes to separate classes in a high-dimensional space.",1
-115,What’s the difference between a generative and discriminative model?,A generative model will learn categories of data while a discriminative model will simply learn the distinction between different categories of data. Discriminative models will generally outperform generative models on classification tasks.,1
+115,What’s the difference between a generative and discriminative model?
+,A generative model will learn categories of data while a discriminative model will simply learn the distinction between different categories of data. Discriminative models will generally outperform generative models on classification tasks.,1
 116,What is the main difference between Decision Trees and Random Forests?,"Decision Trees are single trees that make decisions based on features, while Random Forests are ensembles of multiple trees, averaging their predictions to reduce overfitting.",1
 117,What distance metrics are commonly used in KNN?,"Euclidean distance, Manhattan distance, Minkowski distance, and cosine similarity are commonly used distance metrics in KNN for measuring similarity between data points.",1
 118,How to deal with very few data samples? Is it possible to make a model out of it?,If very few data samples are there we can make use of oversampling to produce new data points. In this way we can have new data points.,1
