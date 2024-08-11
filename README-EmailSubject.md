@@ -243,7 +243,7 @@ We created an account on Hugging Face, set up a new Space for our app, and push 
 
 [Microsoft Phi-3](https://github.com/nutworker/qM-AI-L/blob/main/email-subject/model-tuning/Phi_3_Mini_4K_Instruct_Unsloth_2x_faster_finetuning_Group15.ipynb)
 
-[Mistral] (https://github.com/nutworker/qM-AI-L/blob/main/email-subject/model-tuning/Alpaca_%2B_Mistral_v3_7b_full_example_Group15%20(1).ipynb)
+[Mistral](https://github.com/nutworker/qM-AI-L/blob/main/email-subject/model-tuning/Alpaca_%2B_Mistral_v3_7b_full_example_Group15%20(1).ipynb)
 
 
 ### Models References
