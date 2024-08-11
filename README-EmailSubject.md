@@ -227,23 +227,23 @@ We prepared our app script and ensure all necessary dependencies are listed in a
 We created an account on Hugging Face, set up a new Space for our app, and push our code to this Space, making our app publicly accessible.
 
 ### Links to Gradio App files and model on HuggingFace
-https://github.com/nutworker/qM-AI-L/tree/main/email-subject/Deployment
+[Gradio Deployment Files](https://github.com/nutworker/qM-AI-L/tree/main/email-subject/Deployment)
 
-https://huggingface.co/spaces/ssirikon/Gradio2-SubjectGen/tree/main
+[Gradio App Link](https://huggingface.co/spaces/ssirikon/Gradio2-SubjectGen/tree/main)
 
-https://huggingface.co/Lohith9459/gemma7b/tree/main
+[Gemma Model Link](https://huggingface.co/Lohith9459/gemma7b/tree/main)
 
 ### Links to our project notebooks
 
-https://github.com/nutworker/qM-AI-L/blob/main/Flan_T5_Base_Model.ipynb
+[Flan T5](https://github.com/nutworker/qM-AI-L/blob/main/Flan_T5_Base_Model.ipynb)
 
-https://github.com/nutworker/qM-AI-L/blob/L_test/email-subject/model-tuning/FB_Bart_Model1.ipynb
+[FB BART](https://github.com/nutworker/qM-AI-L/blob/L_test/email-subject/model-tuning/FB_Bart_Model1.ipynb)
 
-https://github.com/nutworker/qM-AI-L/blob/main/Gemma_7b_with_Unsloth2.ipynb
+[Google Gemma](https://github.com/nutworker/qM-AI-L/blob/main/Gemma_7b_with_Unsloth2.ipynb)
 
-https://github.com/nutworker/qM-AI-L/blob/main/email-subject/model-tuning/Phi_3_Mini_4K_Instruct_Unsloth_2x_faster_finetuning_Group15.ipynb
+[Microsoft Phi-3](https://github.com/nutworker/qM-AI-L/blob/main/email-subject/model-tuning/Phi_3_Mini_4K_Instruct_Unsloth_2x_faster_finetuning_Group15.ipynb)
 
-https://github.com/nutworker/qM-AI-L/blob/main/email-subject/model-tuning/Alpaca_%2B_Mistral_v3_7b_full_example_Group15%20(1).ipynb
+[Mistral] (https://github.com/nutworker/qM-AI-L/blob/main/email-subject/model-tuning/Alpaca_%2B_Mistral_v3_7b_full_example_Group15%20(1).ipynb)
 
 
 ### Models References
