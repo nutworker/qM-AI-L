@@ -59,34 +59,16 @@
 
 -   GPT-2 medium, Gemma 7B and Llama 3 8B were used for finetuning
 
-  ------------------------------------------------------------------------
-  **Feature**        **Gemma 7B**             **LLaMA 3 8B**
-  ------------------ ------------------------ ----------------------------
-  **Model Size**     7 billion parameters     8 billion parameters
 
-  **Training Data**  Task-specific,           General-purpose, large
-                     proprietary data         public datasets
+![image](https://github.com/user-attachments/assets/81d89d41-e0c1-4b99-bb68-bd66a5984355)
 
-  **Architecture**   Transformer-based,       Meta's LLaMA Transformer,
-                     optimized for tasks      efficient design
-
-  **Performance      Task/domain-specific     General-purpose NLP, high
-  Focus**            fine-tuning              adaptability
-
-  **Optimization**   Domain-specific          Lightweight, high
-                     efficiency               generalization
-
-  **Hardware         Lower resource           Slightly higher, still
-  Requirements**     requirements             efficient
-
-  **Fine-tuning      Focused on specific      Highly adaptable to various
-  Flexibility**      tasks                    tasks
-
-  **Use Case**       Specialized applications Broad range (generation,
-                     (e.g., QA, support)      summarization, etc.)
   ------------------------------------------------------------------------
 
 ## Prompt Structure and Formatting
+
+* Added Clear Instructions: Specified format, tone, or length to guide the model’s response.
+* Provideed Context: Includeed relevant details to anchor the model's answer closer to the reference.
+* Useed Examples: Provided sample responses to show the desired structure and style.
 
 # Fine-tuning
 
@@ -170,9 +152,9 @@
 -   Hyperparameters are adjusted and retrained until desired performance
     is reached.
 
-> # Dataset-1:
+# Dataset-1:
 ![image](https://github.com/user-attachments/assets/16750d81-96d0-4e50-add1-a2a3f2ddb1ba)
-
+--
 ![image](https://github.com/user-attachments/assets/abff7f58-a234-4978-a510-ba606d8f4ef1)
 
 Dataset-1				
@@ -186,7 +168,7 @@ average_meteor_score	0.26818	0.232883	0.284824	0.258258
 ![image](https://github.com/user-attachments/assets/93c79d48-8b93-4c64-8922-9154c02e56f8)
 
 
-
+--
 # Dataset-2
 
 ![image](https://github.com/user-attachments/assets/a52724e5-2d07-4f7f-9f90-210604ce2d7b)
