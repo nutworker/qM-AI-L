@@ -69,7 +69,7 @@
 * Added Clear Instructions: Specified format, tone, or length to guide the model’s response.
 * Provideed Context: Includeed relevant details to anchor the model's answer closer to the reference.
 * Useed Examples: Provided sample responses to show the desired structure and style.
-
+ ------------------------------------------------------------------------
 # Fine-tuning
 
 ## Environment Setup
@@ -79,7 +79,7 @@
 
 -   Necessary GPU/TPU resources were made available for handling large
     models efficiently.
----
+--
 ##  Model Loading
 
 -   Load the pretrained model (Gemma 7B or LLaMA 8B) from Huggingface
@@ -156,15 +156,8 @@
 ![image](https://github.com/user-attachments/assets/16750d81-96d0-4e50-add1-a2a3f2ddb1ba)
 --
 ![image](https://github.com/user-attachments/assets/abff7f58-a234-4978-a510-ba606d8f4ef1)
+--
 
-Dataset-1				
-Metric	Llama3-8b_model Vs.Answer-1	Llama3-8b_model Vs.Answer-2	Gemma Model Vs.Answer-1	Gemma Model Vs.Answer-2
-average_rouge1	0.400487	0.376601	0.419145	0.393645
-average_rouge2	0.177318	0.143933	0.187985	0.165117
-average_rougeL	0.325214	0.288521	0.336342	0.315571
-average_rougeLsum	0.328088	0.291801	0.339513	0.319638
-average_bleu_score	0.693772	0.669431	0.985344	0.732727
-average_meteor_score	0.26818	0.232883	0.284824	0.258258
 ![image](https://github.com/user-attachments/assets/93c79d48-8b93-4c64-8922-9154c02e56f8)
 
 
@@ -172,39 +165,15 @@ average_meteor_score	0.26818	0.232883	0.284824	0.258258
 # Dataset-2
 
 ![image](https://github.com/user-attachments/assets/a52724e5-2d07-4f7f-9f90-210604ce2d7b)
-
+--
 ![image](https://github.com/user-attachments/assets/5692a685-ce7b-4062-855a-d6855508f1ca)
 
-Dataset-2		
-Metric	Gemma_7b	Meta-Llama-3.1-8B
-average_rouge1	0.4389	0.4036
-average_rouge2	0.2061	0.2035
-average_rougeL	0.3709	0.3459
-average_rougeLsum	0.3709	0.3459
-average_bleu_score	0.8368	0.4513
-average_meteor_score	0.2955	0.2853
 ![image](https://github.com/user-attachments/assets/1023f460-f203-4879-8823-521462911936)
 
 
 ![image](https://github.com/user-attachments/assets/93490dd0-4d69-4c99-a4c9-8a72b3c856d4)
 
 
-  ------------------------------------------------------------------------
-  **Dataset-2**                                  
-  ----------------------------- ---------------- -------------------------
-  **Metric**                    **Gemma_7b**     **Meta-Llama-3.1-8B**
-
-  Avg_rouge1                    0.4389           0.4036
-
-  Avg_rouge2                    0.2061           0.2035
-
-  Avg_rougeL                    0.3709           0.3459
-
-  Avg_rougeLsum                 0.3709           0.3459
-
-  Avg_bleu_score                0.8368           0.4513
-
-  Avg_meteor_score              0.2955           0.2853
   ------------------------------------------------------------------------
 
 **Save and Deploy**
