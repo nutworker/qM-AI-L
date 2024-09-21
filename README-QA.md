@@ -178,8 +178,10 @@
 
 **Save and Deploy**
 
--   Fine-tuned model and tokenizer are saved for evaluation, inferencing
-    and deployment
+Build the Gradio App: Designed Gradio interface, defining how the user will interact with the model and ensuring the input and output specifications are clear.
 
--   Deployed the model to production or use it for inference for
-    generating answers
+Save the App and Dependencies: Prepared our app script and ensure all necessary dependencies are listed in a requirements file, ready for deployment.
+
+Publish on Hugging Face Spaces: Created an account on Hugging Face, set up a new Space for our app, and push our code to this Space, making our app publicly accessible.
+
+
