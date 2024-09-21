@@ -176,7 +176,7 @@
 
   ------------------------------------------------------------------------
 
-**Save and Deploy**
+## Save and Deploy
 
 Build the Gradio App: Designed Gradio interface, defining how the user will interact with the model and ensuring the input and output specifications are clear.
 
