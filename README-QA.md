@@ -60,7 +60,8 @@
 -   GPT-2 medium, Gemma 7B and Llama 3 8B were used for finetuning
 
 
-![image](https://github.com/user-attachments/assets/81d89d41-e0c1-4b99-bb68-bd66a5984355)
+![image](https://github.com/user-attachments/assets/24c77c1f-8207-4d47-8ea5-81018168b04d)
+
 
   ------------------------------------------------------------------------
 
