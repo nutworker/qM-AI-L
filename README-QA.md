@@ -1,5 +1,5 @@
 # Question Answering on AIML Queries
-
+---
 ## Task
 
 -   The QnA task is to generate free-form responses that require not
@@ -96,7 +96,6 @@
     -   bias=\"none\",
 
     -   use_gradient_checkpointing=True
----
 
   ------------------------------------------------------------------------
 
@@ -171,8 +170,6 @@
 ![image](https://github.com/user-attachments/assets/abff7f58-a234-4978-a510-ba606d8f4ef1)
 --
 
-
-
 --
 # Dataset-2
 
@@ -180,7 +177,9 @@
 --
 ![image](https://github.com/user-attachments/assets/5692a685-ce7b-4062-855a-d6855508f1ca)
 
-![image](https://github.com/user-attachments/assets/1023f460-f203-4879-8823-521462911936)
+
+------------------------------------------------------------------------
+![image](https://github.com/user-attachments/assets/747b1a1c-bebd-4007-b13e-2cb815949173)
 
 
 ![image](https://github.com/user-attachments/assets/d30a89b7-52bc-4b32-9135-e6e50340648d)
