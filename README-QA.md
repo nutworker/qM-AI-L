@@ -63,13 +63,6 @@
 ![image](https://github.com/user-attachments/assets/24c77c1f-8207-4d47-8ea5-81018168b04d)
 
 
-  ------------------------------------------------------------------------
-
-## Prompt Structure and Formatting
-
-* Added Clear Instructions: Specified format, tone, or length to guide the model’s response.
-* Provideed Context: Includeed relevant details to anchor the model's answer closer to the reference.
-* Useed Examples: Provided sample responses to show the desired structure and style.
  ------------------------------------------------------------------------
 # Fine-tuning
 
@@ -104,6 +97,25 @@
 
     -   use_gradient_checkpointing=True
 ---
+
+  ------------------------------------------------------------------------
+
+## Prompt Structure and Formatting
+
+* Added Clear Instructions: Specified format, tone, or length to guide the model’s response.
+* Used Examples: Provided sample responses to show the desired structure and style.
+
+* GPT2LMHead Model doesn’t need a context to be provided to generate a response unlike GPT2ForQuestionAnswering.
+* Compared to GPT2 advanced models like gemma provide better answers as they have been trained on lot of data.
+* Prompt given makes a difference in the predicted response.
+
+* Llama model was generating answers with http links/ references from its earlier trained knowledge. Solved it with giving prompt instruction.
+* TextStreamer was not respecting EOS_TOKEN for few questions. Continuous answer generation. Debug EOS Token Behavior needs to done.
+
+
+
+
+------------------------------------------------------------------------
 ## Fine-Tuning Configuration
 
 -   Hyperparameters are defined such as learning rate, batch size, and
@@ -159,7 +171,6 @@
 ![image](https://github.com/user-attachments/assets/abff7f58-a234-4978-a510-ba606d8f4ef1)
 --
 
-![image](https://github.com/user-attachments/assets/93c79d48-8b93-4c64-8922-9154c02e56f8)
 
 
 --
@@ -172,7 +183,7 @@
 ![image](https://github.com/user-attachments/assets/1023f460-f203-4879-8823-521462911936)
 
 
-![image](https://github.com/user-attachments/assets/93490dd0-4d69-4c99-a4c9-8a72b3c856d4)
+![image](https://github.com/user-attachments/assets/d30a89b7-52bc-4b32-9135-e6e50340648d)
 
 
   ------------------------------------------------------------------------
