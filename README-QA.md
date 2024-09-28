@@ -155,6 +155,9 @@
     -   seed = 3407,
 
     -   output_dir = \"outputs\",
+ 
+![image](https://github.com/user-attachments/assets/fd8af85d-2a0e-4d21-a1f2-1be6a6c85117)
+
 ---
 ## Evaluation and performance
 
@@ -179,10 +182,12 @@
 
 
 ------------------------------------------------------------------------
-![image](https://github.com/user-attachments/assets/747b1a1c-bebd-4007-b13e-2cb815949173)
+![image](https://github.com/user-attachments/assets/d88783c7-c215-4fb6-834c-9131cca8431c)
 
 
-![image](https://github.com/user-attachments/assets/d30a89b7-52bc-4b32-9135-e6e50340648d)
+
+![image](https://github.com/user-attachments/assets/be0a952c-03ef-4e64-9a6b-6ad99558e171)
+
 
 
   ------------------------------------------------------------------------
